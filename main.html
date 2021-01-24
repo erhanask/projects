@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <title>Mutlu Misafir</title>
+</head>
+
+<body>
+  <nav class="navbar bg-primary navbar-dark navbar-expand-md">
+
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        Firma İsmi
+      </a>
+    </div>
+
+  </nav>
+
+
+  <div class="container mt-5">
+
+
+
+    <div class="card">
+
+
+      <div class="card-header">
+          <h1 class="mb-3">Otelimizin Ortalama Puanı : <strong>10/<span id='averagePoint'>0</span></strong></h1>
+          <div class="border-top border-dark my-3"></div>
+          <h4 class="mt-4">Konfor Ortalama Puanı : <strong>10/<span id='konforPoint'>0</span></strong></h4>
+          <h4 class="mt-4">Hizmet Ortalama Puanı : <strong>10/<span id='hizmetPoint'>0</span></strong></h4>
+          <h4 class="mt-4">Personel Ortalama Puanı : <strong>10/<span id='personelPoint'>0</span></strong></h4>        
+      </div>
+
+
+      <div class="card-body">
+
+
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            Müşterinin ismi :<input type="text" placeholder="Boş Bırakmayınız" class="form-control mt-2" id="name">
+          </div>
+
+          <div class="form-group col-md-6">
+            Müşterinin soyismi :<input type="text" placeholder="Boş Bırakmayınız" class="form-control  mt-2"
+              id="surname">
+          </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="form-row mt-5">
+
+          <div class="form-group col-md-4">
+            Konfor : <input type="text" placeholder="10 / ?" class="form-control mt-2" id="konfor">
+          </div>
+
+          <div class="form-group col-md-4">
+            Hizmet : <input type="text" placeholder="10 / ?" class="form-control mt-2" id="hizmet">
+          </div>
+
+          <div class="form-group col-md-4">
+            Personel : <input type="text" placeholder="10 / ?" class="form-control mt-2" id="personel">
+          </div>
+
+        </div>  
+
+        <button type="submit" id="addBtn" class="btn btn-primary btn-sm">
+          <i class="fas fa-plus"> Müşteri Ekle</i>
+      </button>
+      
+        
+        
+      </div>
+
+
+    </div>
+
+    <div class="card mt-5 mb-5" id="customerCard">
+
+      <table class="table table-stripped table-hover">
+        <thead>
+          <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>Konfor Puanı</th>
+            <th>Hizmet Puanı</th>
+            <th>Personel Puanı</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="customerList">           
+        </tbody>
+
+      </table>
+
+    </div>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
